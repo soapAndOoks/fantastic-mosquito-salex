@@ -17,5 +17,5 @@ function replaceImages(){
 
 
 
-addRandomBackgroundPicture();
-replaceImages();
+
+export {addRandomBackgroundPicture, replaceImages}
