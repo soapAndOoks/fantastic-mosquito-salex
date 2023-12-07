@@ -1,4 +1,6 @@
-import {addRandomBackgroundPicture, replaceImages} from pictureReplacer.js
+"use strict"
+
+import {addRandomBackgroundPicture, replaceImages} from "pictureReplacer.js"
 
 addRandomBackgroundPicture()
 replaceImages()
