@@ -3,7 +3,7 @@
 import {addRandomBackgroundPicture, replaceImages} from "./pictureReplacer.js"
 import {slowlyReplaceAllText, cycleText} from "./textReplacer.js"
 
-setTimeout(function a(){addRandomBackgroundPicture();replaceImages()}, 7000);
-setTimeout(function a(){slowlyReplaceAllText(120000)}, 6000);
-setTimeout(function a(){setInterval(cycleText())}, 100000);
+setTimeout(function a(){addRandomBackgroundPicture();replaceImages()}, 3909);
+setTimeout(function a(){slowlyReplaceAllText(30000)}, 4060);
+setTimeout(function a(){setInterval(cycleText())}, 25000);
 
