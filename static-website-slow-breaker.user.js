@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Website Slow Breaker
-// @namespace    https://soapandooks.github.io/fantastic-mosquito-salex/static-website-breaker.user.js
+// @namespace    https://soapandooks.github.io/fantastic-mosquito-salex/static-website-slow-breaker.user.js
 // @version      0.0.1
 // @description  Makes the webiste experience degrade
 // @author       soapAndOoks
