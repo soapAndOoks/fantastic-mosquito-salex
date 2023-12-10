@@ -29,6 +29,10 @@ function getAllTags(){
 }
 
 function replaceOneTagText(tag, delay){
+  //do not replace if it has any chilren
+  if (tag.childen.length > 0){
+    return -1;
+  }
   setTimeout(() => {
     tag.innerHTML = generateRandomMessage();
   }, delay);
