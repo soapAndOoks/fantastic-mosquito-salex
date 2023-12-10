@@ -60,16 +60,4 @@ function slowlyReplaceAllText(timeTaken){
   }
 }
 
-
-function cycleText(){
-  let allTags = getAllTags();
-  let delay = 0;
-  while (allTags.length){
-    let i = Math.floor(Math.random() * allTags.length);
-    replaceOneTagText(allTags[i], delay);
-    allTags.splice(i, 1);
-    delay += 0.05;
-  }
-}
-
-export {slowlyReplaceAllLinks, slowlyReplaceAllText, cycleText}
+export {slowlyReplaceAllLinks, slowlyReplaceAllText}
