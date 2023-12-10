@@ -1,7 +1,7 @@
 'use strict'
 
 function generateRandomMessage(){
-  let messages = ["", "Have you tried searching up what a virus is?", "Error", "0xDF6 crash"];
+  let messages = ["", "Have you tried searching up what a virus is?", "Error", "0xDF6 crash", "BUZZ", "unhandled exception", "..."];
   let message = messages[Math.floor(Math.random()*messages.length)];
   return message;
 }
@@ -15,13 +15,14 @@ function getAllTags(){
   for (let tag of document.getElementsByTagName("h4")){tags.push(tag);}
   for (let tag of document.getElementsByTagName("h5")){tags.push(tag);}
   for (let tag of document.getElementsByTagName("h6")){tags.push(tag);}
+  for (let tag of document.getElementsByTagName("li")){tags.push(tag);}
   for (let tag of document.getElementsByTagName("a")){tags.push(tag);}
   return tags;
 }
 
 function replaceOneTagText(tag, delay){
   setTimeout(() => {
-    tag.innerHTML = generateRandomMessage();
+    tag.innerText = generateRandomMessage();
   }, delay);
 }
 
