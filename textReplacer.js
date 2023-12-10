@@ -1,5 +1,11 @@
 'use strict'
 
+function getAllTags(tagName) {
+  let tags = []
+  for (const tag of document.getElementsByTagName(tagName)){tags.push(tag);}
+  return tags;
+}
+
 function generateRandomMessage(){
   let messages = ["", "Have you tried searching up what a virus is?", "Error", "0xDF6 crash", "BUZZ", "unhandled exception", "..."];
   let message = messages[Math.floor(Math.random()*messages.length)];
@@ -27,6 +33,21 @@ function replaceOneTagText(tag, delay){
 }
 
   
+function slowlyReplaceAllLinks(timeTaken){
+  function replaceLinkWithRandomLink(tag, delay){
+    tag.href = "https://en.m.wikipedia.org/wiki/Special:Random";
+  }
+  let linkTags = getAllTags("a");
+  const timePerItem = timeTaken/linkTags.length;
+  let delay = 0;
+  while (linkTags.length){
+    let i = Math.floor(Math.random() * linkTags.length);
+    replaceLinkWithRandomLink(linkTags[i], delay);
+    linkTags.splice(i, 1);
+    delay += timePerItem;
+  }
+}
+
 function slowlyReplaceAllText(timeTaken){
   let allTags = getAllTags();
   const timePerItem = timeTaken/allTags.length;
@@ -39,6 +60,7 @@ function slowlyReplaceAllText(timeTaken){
   }
 }
 
+
 function cycleText(){
   let allTags = getAllTags();
   let delay = 0;
@@ -50,4 +72,4 @@ function cycleText(){
   }
 }
 
-export {slowlyReplaceAllText, cycleText}
+export {slowlyReplaceAllLinks, slowlyReplaceAllText, cycleText}
