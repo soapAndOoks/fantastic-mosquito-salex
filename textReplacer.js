@@ -7,7 +7,7 @@ function getAllTags(tagName) {
 }
 
 function generateRandomMessage(){
-  let messages = ["", "Have you tried searching up what a virus is?", "Error", "0xDF6 crash", "BUZZ", "unhandled exception", "..."];
+  let messages = ["", "Have you tried searching up what a virus is?", "Error", "0xDF6 crash", "BUZZ", "unhandled exception", "...", "Cogito ergo sum", "performace error", "web error", "build error", "load exception", "build difficulty", "logging enabled"];
   let message = messages[Math.floor(Math.random()*messages.length)];
   return message;
 }
