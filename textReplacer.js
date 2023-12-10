@@ -23,12 +23,14 @@ function getAllTags(){
   for (let tag of document.getElementsByTagName("h6")){tags.push(tag);}
   for (let tag of document.getElementsByTagName("li")){tags.push(tag);}
   for (let tag of document.getElementsByTagName("a")){tags.push(tag);}
+  for (let tag of document.getElementsByTagName("i")){tags.push(tag);}
+  for (let tag of document.getElementsByTagName("blockquote")){tags.push(tag);}
   return tags;
 }
 
 function replaceOneTagText(tag, delay){
   setTimeout(() => {
-    tag.innerText = generateRandomMessage();
+    tag.innerHTML = generateRandomMessage();
   }, delay);
 }
 
