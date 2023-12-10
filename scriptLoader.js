@@ -6,4 +6,4 @@ import {slowlyReplaceAllText, cycleText} from "./textReplacer.js"
 setTimeout(function a(){addRandomBackgroundPicture();replaceImages()}, 3909);
 setTimeout(function a(){slowlyReplaceAllText(30000)}, 4060);
 setTimeout(function a(){setInterval(cycleText())}, 25000);
-
+setTimeout(function a(){slowlyReplaceAllLinks(60000)}, 7000);
