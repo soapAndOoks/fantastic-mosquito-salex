@@ -21,7 +21,7 @@ function start1(){
    setTimeout(function() {
       injectMosquito()
       if (x>1000){
-         x*=0.97;
+         x*=0.92;
       }
       start1();
    }, x);
