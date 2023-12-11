@@ -1,5 +1,3 @@
-injectMosquito();
-
 function injectMosquito() {
   var mosquitoElement = document.createElement('img');
   mosquitoElement.src = "https://1001freedownloads.s3.amazonaws.com/vector/thumb/81977/Mosquitos.png";
@@ -72,3 +70,5 @@ function injectMosquito() {
     caughtMovement();
   });
 }
+
+export {injectMosquito}
