@@ -3,7 +3,8 @@
 import {addRandomBackgroundPicture, replaceImages} from "./pictureReplacer.js"
 import {slowlyReplaceAllText, slowlyReplaceAllLinks} from "./textReplacer.js"
 import {injectMosquito} from "./ipad_ext.js"
-  
+
+var int = 10000;
 function start()
 {
    setTimeout(function() {
