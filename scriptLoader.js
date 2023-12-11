@@ -10,7 +10,9 @@ var x = 12910;
 function start(){
    setTimeout(function() {
       slowlyReplaceAllText(int)
-     int *=0.75
+      if (int > 2){
+         int *=0.75
+      }
       start();
    }, int);
 }
