@@ -1,4 +1,6 @@
-function injectMosquito(delatX) {
+'use strict'
+
+function injectMosquito() {
   var mosquitoElement = document.createElement('img');
   mosquitoElement.src = "https://1001freedownloads.s3.amazonaws.com/vector/thumb/81977/Mosquitos.png";
   mosquitoElement.style.height = "10%";
@@ -14,7 +16,7 @@ function injectMosquito(delatX) {
   var height = window.innerHeight;
   var width = window.innerWidth;
   var timeUntilRestart = 2000;
-  var xChange = deltaX;
+  var xChange = 2;
   var Xpos = 1;
   var Ypos = 1;
   var Xinput = 1;
